@@ -266,29 +266,6 @@ transition: 1.5s;
     display: flex;
     position: relative;
 }
-.headerSliderArrowLeft {
-   position: absolute;
-   right: 620px;
-   bottom: 220px;
-}
-
-.headerSliderArrowLeft i {
-    font-size: 50px;
-    cursor: pointer;
-    color: white;
-}
-.headerSliderArrowRight {
-    position: absolute;
-    right: 220px;
-    bottom: 220px;
- }
- 
-.headerSliderArrowRight i {
-    font-size: 50px;
-    cursor: pointer;
-    color: white;
-}
-
 
 
 
