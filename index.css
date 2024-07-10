@@ -1,0 +1,402 @@
+html {
+    
+    overflow-x: hidden;
+   
+    scroll-behavior: smooth;
+}
+body {
+    margin: 0;
+    padding: 0;
+overflow-x: hidden;
+
+}
+.headerBackground {
+    background-image: url("background2.webp");
+    
+    background-size:cover;
+height: 750px;
+max-width: 100%;
+}
+.navBar {
+    display: flex;
+    justify-content: space-between;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+.logo {
+    text-transform: uppercase;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin-top: 41px;
+   
+}
+.logoLink {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.navBarLinks {
+    display: flex;
+    margin-top: 25px;
+  
+}
+.menu {
+    display: flex;
+}
+.menuLinks {
+    list-style: none;
+    margin-right: 30px;
+  
+    text-transform: uppercase;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.theRealMenuLinks {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+.cartLogo {
+    display: flex;
+    position: relative;
+    margin-top: 10px;
+    
+}
+.menuLogoLink {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    margin-right: 20px;
+}
+#menuLogo {
+    font-size: 30px;
+    cursor: pointer;
+}
+.cartLogoLink {
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+}
+
+#cartLogo {
+    font-size: 25px;
+ 
+}
+.cartLogoNumber {
+    font-size: 20px;
+    text-decoration: none;
+    color: white;
+    cursor: pointer;
+    position: absolute;
+    left: 5px;
+    background-color: blueviolet;
+    border-radius: 10px;
+     bottom: 33px;
+     padding: 3px;
+}
+
+.headerText {
+    margin: 150px 0px 0px 30px;
+    display: flex;
+    flex-direction: column;
+ 
+}
+.subHeaderText {
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+     Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+     text-transform: uppercase;
+}
+.subHeaderParagraph {
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+}
+
+.headerbookTableButton {
+    background-color: black;
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    width: 250px;
+    font-size: 20px;
+    height: 70px;
+    border: black;
+    cursor: pointer;
+   margin-right: 40px;
+}
+.headerbookTableButton:hover {
+    background-color: blueviolet;
+    transition: 1.5s;
+}
+
+.headerReservationsButton {
+    background-color: black;
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    width: 250px;
+    font-size: 20px;
+    height: 70px;
+    border: black;
+    cursor: pointer;
+   
+}
+.headerReservationsButton:hover {
+    background-color: blueviolet;
+    transition: 1.5s;
+}
+
+/*<div class="headerSlider">
+    <div class="headerImageSlider">
+        <div class="headerSliderImageMain">
+        <img src="image1.jpeg" alt="" class="headerSliderImage">
+        </div>
+        <div class="headerSliderPriceMain">
+        <span class="headerImageSliderPrice">$20.99</span>
+        </div>
+        <div class="headerSliderMainText">
+        <h2 class="headerImageSliderText">Burger + White Cheese</h2>
+        </div>
+      
+        <div class="headerImageSliderButtons">
+            <button class="headerImageSliderOrderButton">Order Now</button>
+            <button class="headerImageSliderAddToCartButton">Add to cart</button>
+        </div>
+    </div>
+</div>
+*/
+
+
+.headerSlider {
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    position: relative;
+    margin-top: 50px;
+}
+.headerImageSlider:nth-child(4) {
+    display: none;
+} 
+.headerImageSlider:nth-child(3) {
+    display: none;
+} 
+.headerImageSlider:nth-child(2) {
+    display: none;
+} 
+.headerImageSlider:nth-child(1) {
+    display: block;
+} 
+.headerImageSlider {
+position: absolute;
+bottom: 0px;
+left: 60vw;
+display: flex;
+flex-direction: column;
+}
+.headerSliderImage {
+max-width: 100%;
+height: auto;
+border-radius: 10px;
+}
+.headerSliderPriceMain {
+    position: relative;
+}
+.headerImageSliderPrice {
+    color: white;
+    background-color: black;
+    padding: 20px 10px 20px 10px;
+    border-radius: 50%;
+    border-style:solid;
+    position: absolute;
+    bottom: 150px;
+    right: 204px;
+    font-size:25px;
+}
+.headerImageSliderText {
+    
+    color: white;
+    background-color: black;
+    width: 100%;
+    border-radius: 10px;
+    text-align: center;
+    padding: 10px 0px 10px 0px;
+}
+.headerImageSliderButtons {
+    display: flex;
+    justify-content: center;
+}
+.headerImageSliderOrderButton {
+    background-color: black;
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    width: 120px;
+    font-size: 16px;
+    height: 70px;
+    border: black;
+    cursor: pointer;
+   margin-right: 19px;
+}
+.headerImageSliderOrderButton:hover {
+    background-color: blueviolet;
+    transition: 1.5s;
+    }
+    
+.headerImageSliderAddToCartButton {
+    background-color: black;
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    width: 120px;
+    font-size: 16px;
+    height: 70px;
+    border: black;
+    cursor: pointer;
+    margin-left: 19px;
+}
+
+.headerImageSliderAddToCartButton:hover {
+background-color: blueviolet;
+transition: 1.5s;
+}
+.headerSliderArrowButtons{
+    display: flex;
+    position: relative;
+}
+.headerSliderArrowLeft {
+   position: absolute;
+   right: 620px;
+   bottom: 220px;
+}
+
+.headerSliderArrowLeft i {
+    font-size: 50px;
+    cursor: pointer;
+    color: white;
+}
+.headerSliderArrowRight {
+    position: absolute;
+    right: 220px;
+    bottom: 220px;
+ }
+ 
+.headerSliderArrowRight i {
+    font-size: 50px;
+    cursor: pointer;
+    color: white;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1200px) {
+    .headerSlider {
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        position: relative;
+        margin-top: 50px;
+        margin-left: 30px;
+    }
+}
+
+@media screen and (min-width:921px) {
+    .menuLogoLink {
+        display: none;
+     
+    }
+}
+@media screen and (max-width:921px) {
+    .menu {
+        display: none;
+     
+    }
+    .cartLogoNumber {
+        font-size: 20px;
+        text-decoration: none;
+        color: white;
+        cursor: pointer;
+        position: absolute;
+        left: 55px;
+        background-color: blueviolet;
+        border-radius: 10px;
+         bottom: 28px;
+         padding: 3px;
+    }
+    .headerSlider {
+       display: none;
+    }
+
+}
+@media screen and (max-width:600px) {
+    .headerText {
+        margin: 70px 0px 0px 30px;
+        display: flex;
+        flex-direction: column;
+     
+    }
+    .subHeaderText {
+        color: white;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+         Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+         text-transform: uppercase;
+         text-align: center;
+         font-size: 18px;
+    }
+    .subHeaderParagraph {
+        color: white;
+        font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+        Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+        text-transform: uppercase;
+        text-align: center;
+    }
+        
+    
+.subHeaderButtons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-left: 20px;
+    margin-top: 20px;
+}
+.headerbookTableButton {
+    background-color: black;
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    width: 250px;
+    font-size: 20px;
+    height: 70px;
+    border: black;
+    cursor: pointer;
+   
+}
+
+
+.headerReservationsButton {
+    background-color: black;
+    color: white;
+    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI',
+    Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-transform: uppercase;
+    width: 250px;
+    font-size: 20px;
+    height: 70px;
+    border: black;
+    cursor: pointer;
+   margin-top: 20px;
+   margin-left: -35px;
+}
+}
